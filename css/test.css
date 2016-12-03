@@ -1,0 +1,229 @@
+*{margin: 0;padding: 0;}
+html{font-size: 20px;}
+header{
+    width: 100%;
+    height:2.2rem;
+    background:black;
+    line-height: 2.2rem;
+    text-align: center;
+}
+header span{
+    width:1.125rem ;
+    height: 0.8rem;
+    background: url(../img/header1.png) no-repeat;
+    position: relative;
+    left:  1.35rem;top:  0.7rem;
+    display: block;
+}
+header h1 {
+    font-size: 0.825rem;
+    color: #f6fafb;
+    position: relative;
+    left:  6.2rem;top:0rem;
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    height: 20.3rem;
+}
+.banner span{
+    width: 100%;
+    height: 100%;
+    background: url(../img/section1.png) no-repeat;
+    display: block;
+    background-size:100% ;
+}
+.list ul{
+    overflow: hidden;
+}
+.list li{
+    margin-top: 2.125rem;
+}
+.list li span{
+    margin-left: 1.375rem;
+    margin-top: 2.125rem;
+    color: #eb1d32;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.list li a{
+    font-size: 1.15rem;
+    color: #333333;
+    font-weight: bold;
+    margin-left: 0.825rem;
+}
+.list li i{
+    margin-left: 3.375rem;
+    margin-top:0.825rem;
+    width: 2.125rem;
+    height: 0.2rem;
+    background: #fe0000;
+    display: block;
+
+}
+.list li p{
+    width: 11.925rem;
+    margin-left: 2rem;
+    margin-top: 1.175rem;
+    font-size: 0.7rem;
+    color: #474747;
+    line-height: 1.15rem;
+}
+.list li .last{
+    width: 30rem;
+    height: 10rem;
+    background: #fafafa;
+    margin-top: 1.625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+}
+.list li .last li{
+    width: 3rem;
+    height: 100%;
+    margin-top: 0.15rem;
+    margin-right: 2.775rem;
+}
+.list li .last li span{
+    width: 2.15rem;
+    height: 1.7rem;
+    display: block;
+    margin-left:1.8rem;
+    background: url(../img/list.png) no-repeat;
+    background-size: 100%;
+    margin-bottom: 1.425rem;
+}
+.list li .last li a{
+    width: 100%;
+    display: block;
+    font-size:0.7rem ;
+    color: #464646;
+    margin-left:1.4rem;
+}
+.list li .last li em{
+    font-size: 0.525rem;
+    color: #999;
+    font-weight: bold;
+   margin-left:2.15rem;
+}
+.list li .last li b{
+    font-size: 0.525rem;
+    color: #9a9a9a;
+    font-weight: bold;
+   margin-left: 2.15rem;
+}
+.list .list1{
+    background: #29282e;
+    margin-left: -1.375rem ;
+}
+.list .list1 span{
+    color: #ffffff;
+    margin-left: 2.75rem;
+}
+.list .list1 a{
+    font-size: 1.15rem;
+    color: #fefefe;
+    font-weight: bold;
+    margin-left: 0.825rem;
+}
+.list .list1 i{
+    width: 2.125rem;
+    height: 0.2rem;
+    background: #ffffff;
+    display: block;
+    margin-left:4.825rem ;
+    margin-top: 0.675rem;
+}
+.list .list1 p{
+    width: 11.925rem;
+    margin-left: 4rem;
+    margin-top: 1.175rem;
+    font-size: 0.7rem;
+    color: #474747;
+    line-height: 1.15rem;
+}
+.list .list1 video{
+    width: 16.025rem;
+    height: 10.175rem;
+    margin-left: 2.75rem;
+}
+footer{
+    width:100% ;
+    height: 3.4rem;
+    background: #fafafa;
+}
+footer p{
+    font-size: 0.65rem;
+    color: #989898;
+    line-height: 3.4rem;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    padding-top: 2.2rem;
+    display: none;
+    position: relative;
+
+}
+nav ul{
+
+    background: rgba(0,0,0,0.9);
+    z-index: 99;
+
+    height: 57.575rem;
+}
+nav ul li{
+    margin-left: 2rem;
+    width: 14rem;
+    border-bottom: 1px dashed #fafafa;
+    line-height: 4rem;
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    font-size: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+nav #close{
+    width: 2rem;height: 2rem;
+    position: absolute;
+    top: 10px;right: 10px;
+    color: #ffffff;
+}
+
+
+/*.item {
+    overflow: auto;
+    margin: 1.5rem 0;
+}
+.one-two ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    background: #fafafa;
+    min-width: 100%;
+}
+.one-two ul li {
+    float: left;
+    text-align: center;
+    width: 5rem;
+}
+.one-two ul li img {
+    width: 2.45rem;
+    height: 2.15rem;
+}
+.pic-title {
+    font-size: 0.75rem;
+    color: #474747;
+}
+.svg-css {
+    height: 3rem;
+}
+.pic-eng {
+    font-size: 0.67rem;
+    margin-top: 0.55rem;
+    color: #999;
+}*/

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{list-style: none;padding: 0;margin: 0;}
+
+    #box ul{width:300px;float:left;margin: 10px;border:1px solid saddlebrown;}
+    #box ul li{width: 280px;margin: 10px;}
+
+</style>
+<script>
+    function rnd(n,m){
+        return parseInt(Math.random()*(m-n)+n);
+    }
+    function createLi(){
+        var oLi = document.createElement('li');
+        oLi.style.height = rnd(100,500)+'px';
+        oLi.style.background = 'rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+        return oLi;
+    }
+    window.onload = function(){
+        var oDiv = document.getElementById('box');
+        var aUl = oDiv.children;
+        function createLi20(){
+            for(var i = 0;i<20;i++){
+                var oLi = createLi();
+                var arr = [];
+                for(var j = 0;j<aUl.length;j++){
+                    arr.push(aUl[j]);
+                };
+                arr.sort(function(ul1,ul2){
+                    return ul1.offsetHeight - ul2.offsetHeight;
+                });
+                arr[0].appendChild(oLi);
+            }
+        }
+        createLi20();
+        window.onscroll = function(){
+            var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
+            var clientH = document.documentElement.clientHeight;
+            if(scrollTop+clientH >= document.body.scrollHeight){
+                createLi20();
+            }
+        };
+
+    };
+</script>
+
+<body>
+    <div id="box">
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+    </div>
+</body>
+</html>
