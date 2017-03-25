@@ -3,8 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>何喜的个人主页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.0.js"></script>
+
+
 </head>
 <body>
+<!--头部-->
+<header>
+    <ul id="entrance">
+        <li><input type="button" value="注册" id='register' class="btn btn-default"></li>
+        <li><input type="button" value="登陆" id='login'  class="btn btn-default"></li>
+    </ul>
+    <div id="form-register">
+        <form action="" name='register'>
+            <span class="delete" ></span>
+            <h4>用户注册</h4>
+            <label for="userName2">
+                <input type="text" class="input" placeholder="请输入合法的手机／邮箱" id="userName2">
+            </label>
+            <br>
+            <label for="passWord2">
+                <input class="input" type="password" placeholder="请输入密码" id="passWord2">
+            </label>
+            <br>
+            <label for="copyPassWord">
+                <input class="input" type="password" placeholder="确认密码" id="copyPassWord">
+            </label>
+            <br>
+            <input type="button" value="注册" id="subr" class="subl btn btn-success">
+        </form>
+        <a href="#" id="linkLogin">点击登陆>>></a>
+    </div>
+    <div id="form-login">
+        <form action="" name='login'>
+            <span class="delete" ></span>
+            <h4>用户登录</h4>
+            <label for="userName1">
+                <input type="text" class="input" placeholder="请输入已验证手机／邮箱" id="userName1">
+            </label>
+            <br>
+            <label for="passWord1">
+                <input class="input" type="password" placeholder="请输入密码" id="passWord1">
+            </label>
+            <br>
+            <input type="button" value="登陆" id="subl"  class="subl btn btn-success">
+        </form>
+        <a href="#" id="linkRegister">点击注册>>></a>
+    </div>
+</header>
+<!--添加一个蒙版-->
+<div id="fullMask"></div>
+<!--主体页面开始-->
+<div id="main">
+    <div id="change_picture">
+        <dl>
+            <dt><img src="img/1.jpg"  alt="图片加载失败" height="364" width="650"/></dt>
+            <dt><img src="img/2.jpg" alt="图片加载失败" ></dt>
+            <dt><img src="img/3.jpg" alt="图片加载失败" ></dt>
+            <dt><img src="img/4.jpg" alt="图片加载失败" ></dt>
+            <dt><img src="img/5.jpg" alt="图片加载失败" ></dt>
+            <dt><img src="img/6.jpg" alt="图片加载失败" ></dt>
+        </dl>
+        <div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+        </div>
+    </div>
 
+</div>
+<div style="width: 80px;height: 40px;border: 1px solid darkgray;margin: 10px auto" class="btn-primary">测试按钮</div>
+<script src="js/move_all.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

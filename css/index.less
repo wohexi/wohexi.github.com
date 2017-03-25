@@ -1,0 +1,169 @@
+@brand-primary: darken(#428bca, 6.5%); // #337ab7
+@gray-darker:  lighten(#000, 13.5%); // #222
+@gray-dark:    lighten(#000, 20%);   // #333
+@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+ul,li,dl,ol,dt,dd,p{
+  list-style:none;
+  margin: 0;
+  padding:0;
+}
+.delete{
+  display: block;
+  width: 29px;
+  height: 24px;
+  background:url("../img/close.png") no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.delete:hover{
+  background-position:100% 0;
+}
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+};
+a:hover,
+a:active {color:#3c763d}
+a:visited{color: #2e6da4}
+header{
+  width: 100%;
+  height: 40px;
+  background:@gray-light;
+  margin-bottom:10px;
+  position: relative;
+  #entrance{
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    right: 20%;
+  li{
+    float: right;
+    line-height: 40px;
+    margin-left: 15px;
+  }
+  }
+}
+.form-login() {
+  display: none;
+  position: fixed;
+  left: 40%;
+  top: 20%;
+  z-index: 99;
+  width: 500px;
+  height: 500px;
+  background: #5bc0de;
+  padding: 50px 100px;
+  h4{
+    width:260px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .input{
+    width:260px;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+    line-height:36px;
+    color:  #555;
+  }
+  .subl{
+    width:260px;
+    height: 36px;
+  }
+  a{
+    text-decoration: none;
+    color:#eee;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    top: 20px;
+    left: 55%;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+    color: yellow;
+  }
+}
+//登陆页面的样式
+#form-login{
+  .form-login();
+}
+#form-register{
+  .form-login();
+}
+#fullMask{
+  position: fixed;
+  top:0;
+  left: 0;
+  background:#555;
+  z-index: 98;
+  opacity: 0.6;
+  display: none;
+}
+
+
+
+  #entrance{
+    position: relative;
+    right: 20%;
+    top:0;
+
+  }
+  #change_picture{
+    width: 650px;
+    height: 364px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    dl{
+      position: absolute;
+      top:0;
+      left: 0;
+      dt{
+        width: 650px;
+        height: 364px;
+        float: left;
+        img{
+          width: 100%;
+          height: 100%;
+        };
+      };
+    };
+    div{
+      width: 220px;
+      height: 20px;
+      position: absolute;
+      right: 16%;
+      bottom:10%;
+      .clearfix();
+
+      span{
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        background: #5bc0de;
+        font-size: 16px;
+        text-align: center;
+      };
+      span:first-of-type{
+        background:  #5cb85c;
+      };
+    }
+  }
